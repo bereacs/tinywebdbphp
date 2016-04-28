@@ -1,0 +1,16 @@
+RewriteEngine On
+
+# Some hosts may require you to use the `RewriteBase` directive.
+# If you need to use the `RewriteBase` directive, it should be the
+# absolute physical path to the directory that contains this htaccess file.
+#
+# The RewriteBase needs to get the relative path to the folder
+# in this example it gets the path after http://berea.mobi as /tinydb/matt
+
+RewriteBase /tinydb/matt/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]
+
+#DirectoryIndex index.php
+
