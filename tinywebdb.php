@@ -3,13 +3,13 @@
 /* Usage
 
  API
-  http://berea.mobi/tinydb/<db>/setavalue
+  http://berea.mobi/tinydb/<db>/storeavalue
     tag, value
   http://berea.mobi/tinydb/<db>/getvalue
     tag
 
  SETAVALUE
-  curl -d "tag=fish&value=catcat" http://berea.mobi/tinydb/matt/setavalue
+  curl -d "tag=fish&value=catcat" http://berea.mobi/tinydb/matt/storeavalue
 
  GETVALUE
   curl -d "tag=fish" http://berea.mobi/tinydb/matt/getvalue
